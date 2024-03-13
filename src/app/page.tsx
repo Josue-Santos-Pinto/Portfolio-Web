@@ -1,16 +1,18 @@
 
 import { ThemeToggle } from "@/components/theme-toggle"
+import About from "@/pages/About"
 import Home from "@/pages/Home"
 
 const Page = () => {
   
   return (
-    <div> 
+    <div className="overflow-x-hidden"> 
       <div>
       
-          <ThemeToggle  /> 
+          
       
         <Home />
+        <About />
       </div>
     </div>
   )

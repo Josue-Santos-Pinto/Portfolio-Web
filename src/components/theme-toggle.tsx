@@ -16,7 +16,7 @@ export function ThemeToggle() {
   const { setTheme } = useTheme()
  
   return (
-    <div className="fixed top-2 right-2">
+    
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
@@ -37,6 +37,6 @@ export function ThemeToggle() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-    </div>
+    
   )
 }

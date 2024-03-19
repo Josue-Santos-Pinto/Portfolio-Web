@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Portfólio
 
-## Getting Started
+Olá, sou Josué, um desenvolvedor fullstack junior apaixonado por criar experiências web incríveis. Meu objetivo é combinar minha criatividade e habilidades técnicas para desenvolver soluções inovadoras e funcionais.
 
-First, run the development server:
+## Principais Projetos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### MovieMatch
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Desenvolvi um aplicativo completo de pesquisas de filmes utilizando React Native com Typescript no front-end e Node.js com MySQL no back-end. <br>
+Implementei recursos como autenticação de usuário, consumo e criação de API's REST, e integração com banco de dados MySQL.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Aplicativo na PlayStore: [MovieMatch - Playstore](https://play.google.com/store/apps/details?id=com.moviematch&pli=1) <br>
+Repositório GitHub: [MovieMatch - GitHub](https://github.com/Josue-Santos-Pinto/MovieMatch)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sweat and Treats
 
-## Learn More
+Criei um aplicativo para uma padaria com o objetivo de informar produtos, preços e quando o pão está saindo do forno utilizando React Native para o front-end e Firebase para o back-end. <br>
+Implementei funcionalidades como autenticação de usuário, consumo de API's, criação de Banco de dados e integração com Google Maps. <br>
+Repositório GitHub: [Sweet_and_Treats](https://github.com/Josue-Santos-Pinto/Sweet_and_Treats)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologias
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Front-end: _HTML_, _CSS_, _JavaScript_, _ReactJS_, _React Native_
+### Back-end: _Node.js_
+### Banco de Dados: _MySQL_, _Firebase_
+### Outras Ferramentas: _Git_, _GitHub_, _VSCode_
 
-## Deploy on Vercel
+## Educação
+Graduação em Sistemas de informação na Universidade Estácio de SÁ <br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Habilidades Pessoais
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Excelente habilidade de comunicação e trabalho em equipe.
+Capacidade de aprender rapidamente novas tecnologias e resolver problemas de forma eficaz.
+
+## Contato
+E-mail: santospinto.josue.dev@gmail.com <br>
+LinkedIn: https://www.linkedin.com/in/josue--santos/ <br>
+
+
+## Estou animado para contribuir com projetos desafiadores e continuar aprendendo e crescendo como desenvolvedor fullstack. Vamos trabalhar juntos para criar algo incrível!

@@ -7,17 +7,17 @@
 <script src="https://kit.fontawesome.com/a21b6c73ea.js" crossorigin="anonymous"></script>
 </head>
 <body class="overflow-x-hidden font-sans">
-    <section id="#" class='w-screen h-screen flex flex-col'>
+    <section id="#" class='w-screen h-screen flex flex-col xl:flex-row-reverse'>
         
         
-        <div class='flex flex-1 flex-col justify-center items-center z-10 '>
+        <div class='flex flex-1 flex-col justify-center items-center z-10 xl:items-start'>
             <div class='w-3/4'>
-                <div>
-                   <div class='text-yellow-500 text-5xl uppercase font-bold'>- eu sou o Josué Santos</div> 
-                    <div class='text-5xl uppercase font-bold'>Desenvolvedor FullStack </div>
+                <div class="text-5xl uppercase font-bold xl:text-4xl">
+                   <div class='text-yellow-500'>- eu sou o Josué Santos</div> 
+                    <div>Desenvolvedor FullStack </div>
                 </div>
                 <div class='my-6'>
-                    <div class='my-4 text-lg'>
+                    <div class='my-4 text-xl xl:text-lg'>
                         Olá! eu sou um desenvolvedor fullstack  apaixonado por transformar ideias em soluções digitais. <br />
                         Vamos construir algo incrível juntos!
                     </div>
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <nav class=' w-16 fixed right-2 h-screen flex  justify-center items-center mx-12'>
+        <nav class=' w-16 fixed right-2 h-screen flex  justify-center items-center mx-12 z-50'>
                 <div class='w-full h-96 flex flex-col justify-center items-center gap-8'>
                     <a href="#" class="w-14 h-14 rounded-full bg-yellow-500 flex justify-center items-center">
                         <i class="fa-solid fa-house text-2xl text-white"></i>
@@ -56,18 +56,18 @@
         </nav>      
     </section>
 
-    <section id="about" class='w-screen min-h-screen flex flex-col gap-8'>
+    <section id="about" class='w-screen min-h-screen flex flex-col gap-8 p-4'>
         <div class="w-full h-36 flex justify-center items-center">
             <h1 class='text-5xl uppercase font-bold'>Sobre<h1 class='text-yellow-500 text-5xl uppercase font-bold ml-3'>Mim</h1> </h1>
         </div>
-        <div class="flex flex-col h-full mt-12">
+        <div class="flex flex-col h-full mt-12 xl:flex-row">
             <div class="flex flex-1 justify-center items-center">
                 <div class="size-96 rounded-2xl overflow-hidden">
                     <img src="./assets//computer.jpg" class="w-full h-full object-center bg-cover" />
                 </div>
             </div>
-            <div class="flex flex-1  justify-center items-center mt-12 flex-col">
-                <h1 class="font-bold text-2xl mb-8">Desenvolvedor Fullstack : <br> Conectando Inovação e Paixão pela Tecnologia</h1>
+            <div class="flex flex-1 justify-center items-center mt-12 flex-col xl:items-start">
+                <h1 class="font-bold text-2xl mb-8 text-center xl:text-left xl:text-xl">Desenvolvedor Fullstack : <br> Conectando Inovação e Paixão pela Tecnologia</h1>
                     <p class="max-w-96">
                         Desde que entrei no mundo da programação, fiquei fascinado pela capacidade de criar soluções inovadoras que impactam positivamente a vida das pessoas.
                         Com formação acadêmica em Sistemas de Informação e experiência prática em projetos reais, adquiri 
@@ -105,7 +105,7 @@
     </section>
 
 
-    <section id="portfolio" class='w-screen min-h-screen'>
+    <section id="portfolio" class='w-screen min-h-screen p-4'>
         <div class="w-full h-36 flex justify-center items-center">
             <h1 class='text-5xl uppercase font-bold'>Meu<h1 class='text-yellow-500 text-5xl uppercase font-bold ml-3'>Porfolio</h1> </h1>
         </div>
@@ -120,14 +120,14 @@
             </nav>
             <div class="flex flex-1 justify-center items-center">
                 <div class="grid grid-cols-2 grid-rows-3 gap-2 w-2/3">
-                    <div class="w-full h-80 bg-black "><img src="" class="w-full h-full object-center bg-cover" /></div>
-                    <div class="w-full h-80 bg-black"><img src="" class="w-full h-full object-center bg-cover" /></div>
-                    <div class="w-full h-80 bg-black"><img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96 "><img src="" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96"><img src="" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96"><img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" /></div>
                     
     
-                    <div class="w-full h-80 bg-black"><img src="./assets/projects/guitarstore.png" class="w-full h-full object-center bg-cover" /></div>
-                    <div class="w-full h-80 bg-black"><img src="" class="w-full h-full object-center bg-cover" /></div>
-                    <div class="w-full h-80 bg-black"><img src="" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96"><img src="./assets/projects/guitarstore.png" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96"><img src="" class="w-full h-full object-center bg-cover" /></div>
+                    <div class="w-full h-80 bg-black xl:h-96"><img src="" class="w-full h-full object-center bg-cover" /></div>
                 </div>
             </div>
        </div>
@@ -135,12 +135,12 @@
 
 
 
-    <section id="contact" class='w-screen h-screen flex flex-col'>
+    <section id="contact" class='w-screen h-screen flex flex-col p-4'>
         <div class="w-full h-36 flex justify-center items-center">
             <h1 class='text-5xl uppercase font-bold'>Contate<h1 class='text-yellow-500 text-5xl uppercase font-bold ml-3'>Me</h1> </h1>
         </div>
-        <div class="flex flex-col w-3/4 mx-auto mt-8">
-            <div class="flex flex-1/2 flex-col mx-12 justify-center items-center ">
+        <div class="flex flex-col w-3/4 mx-auto mt-8 xl:flex-row">
+            <div class="flex flex-1/2 flex-col mx-12 justify-center items-center xl:justify-start ">
                 <h1 class="text-2xl font-bold uppercase mb-6">Não seja timido !</h1>
                     <p class="text-center">
                         Sinta-se livre para entrar em contato comigo. <br>

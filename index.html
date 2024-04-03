@@ -8,7 +8,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body class="overflow-x-hidden font-sans">
-    <section id="#" class='w-screen h-screen flex flex-col xl:flex-row-reverse'>
+    <section id="#" class='w-screen h-screen p-10 h-auto flex flex-col xl:flex-row-reverse overflow-hidden'>
         <div class='flex flex-1 flex-col justify-center items-center z-10 xl:items-start'>
             <div class='w-3/4'>
                 <div class="text-5xl uppercase font-bold xl:text-4xl">
@@ -33,7 +33,10 @@
 
         <div class='flex flex-1 justify-center xl:items-center'>
             <div class='w-full h-screen absolute left-0 bottom-0 bg-yellow-300 [clip-path:polygon(0%_0%,100%_100%,0%_100%)] xl:[clip-path:polygon(0%_0%,75%_100%,0%_100%)]'></div>
-            <div class=' w-2/3 h-3/4 bg-white z-10 mx-10 rounded-3xl xl:my-auto' >
+            <div class='w-full h-full flex items-center justify-center z-10' >
+                <div class="w-3/4 h-3/4 rounded-3xl overflow-hidden">
+                    <img src="./assets/perfil.jpg" alt="foto de perfil" class="w-full h-full object-center bg-contain">
+                </div>
             </div>
         </div>
 
@@ -121,16 +124,31 @@
             </nav>
             <div class="flex flex-1 justify-center items-center">
                 <!--Projetos - TODOS -->
-                <div id="project1" class="conteudo grid grid-cols-1 grid-rows-6 gap-2 w-2/3 lg:grid-cols-2 lg:grid-rows-3">
-                        <div class="w-full h-96 bg-black ">
-                            <img src="" class="w-full h-full object-center bg-cover" />
+                <div id="project1" class="conteudo grid grid-cols-1 gap-2 w-2/3 lg:grid-cols-2 ">
+                        <!--GuitarStore-WEB-->
+                        <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black">
+                            <img src="./assets//projects/guitarstore-web.png" class="w-full h-full object-center bg-cover" />]
+                            <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
+                                <h1 class="font-bold my-6 text-2xl text-center">GuitarStore - WEB</h1>
+                                <h3 class="text-center">Aplicativo para venda de aparelhos musicais</h3>
+                                <div class="flex flex-col flex-1 items-center">
+                                    <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
+                                    <div class="flex flex-row gap-2 mt-4">
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                    </div>
+                                </div>
+                                <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
+                                    <a href="https://github.com/Josue-Santos-Pinto/GuitarStore-WEB" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                    <a href="https://guitar-store-web.vercel.app/" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="w-full h-96 bg-black ">
-                            <img src="" class="w-full h-full object-center bg-cover" />
-                        </div>
                             <!--MovieMatch-->
-                            <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative ">
+                            <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black ">
                                 <img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" />
                                     
                                         <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
@@ -147,14 +165,14 @@
                                                 </div>
                                             </div>
                                             <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                                <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></div>
-                                                <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></div>
+                                                <a href="https://github.com/Josue-Santos-Pinto/MovieMatch" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                                <a href="https://play.google.com/store/apps/details?id=com.moviematch" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
                                             </div>
                                         </div>  
                                 </div>
                     
                                 <!--GuitarStore-->
-                                <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative ">
+                                <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black ">
                                     <img src="./assets//projects/guitarstore.png" class="w-full h-full object-center bg-cover" />]
                                     <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
                                         <h1 class="font-bold my-6 text-2xl text-center">GuitarStore</h1>
@@ -175,78 +193,60 @@
                                 </div>
 
 
-                                <div class="w-full h-96 bg-black xl:h-96">
-                                    <img src="" class="w-full h-full object-center bg-cover" />
-                                </div>
-
-
-                                <div class="w-full h-96 bg-black xl:h-96">
-                                    <img src="" class="w-full h-full object-center bg-cover" />
+                                <!--MovieMatch-BACKEND-->
+                                <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black">
+                                    <img src="./assets//projects/moviematch-backend.png" class="w-full h-full object-center bg-cover" />]
+                                    <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
+                                        <h1 class="font-bold my-6 text-2xl text-center">MovieMatch - Backend</h1>
+                                        <h3 class="text-center">API do aplicativo MovieMatch</h3>
+                                        <div class="flex flex-col flex-1 items-center">
+                                            <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
+                                            <div class="flex flex-row gap-2 mt-4">
+                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
+                                            <a href="https://github.com/Josue-Santos-Pinto/GuitarStore-BACKEND" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                            <a href="https://moviematch-backend.vercel.app/" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                 </div>
 
 
                 <!--Projetos - WEB -->
-                    <div id="project2" class="conteudo grid grid-cols-1 grid-rows-6 gap-2 w-2/3 hidden lg:grid-cols-2 lg:grid-rows-3">
-                            <!--MovieMatch-->
-                            <div class="group w-full h-80 bg-black rounded-2xl overflow-hidden relative xl:h-96">
-                                <img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" />
-                                    
-                                        <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
-                                            <h1 class="font-bold my-6 text-2xl text-center">MovieMatch WEB</h1>
-                                            <h3 class="text-center">Aplicativo para pesquisa de filmes</h3>
-                                            <div class="flex flex-col flex-1 items-center">
-                                                <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
-                                                <div class="flex flex-row gap-2 mt-4">
-                                                    <div class="size-11 xl:size-3/6"><img alt="html5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                                <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer"></i></div>
-                                                <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer"></i></div>
-                                            </div>
-                                        </div>  
-                            </div>
-                    
-                            <!--GuitarStore-->
-                            <div class="group w-full h-80 bg-black rounded-2xl overflow-hidden relative xl:h-96">
-                                <img src="./assets//projects/guitarstore.png" class="w-full h-full object-center bg-cover" />]
-                                <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
-                                    <h1 class="font-bold my-6 text-2xl text-center">GuitarStore WEB</h1>
-                                    <h3 class="text-center">Aplicativo para venda de guitarras e aparelhos musicais</h3>
-                                    <div class="flex flex-col flex-1 items-center">
-                                        <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
-                                        <div class="flex flex-row gap-2 mt-4">
-                                            <div class="size-11 xl:size-3/6"><img alt="html5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                        <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer"></i></div>
-                                        <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer"></i></div>
+                    <div id="project2" class="conteudo grid grid-cols-1 gap-2 w-2/3 hidden lg:grid-cols-2">
+                            <!--GuitarStore-WEB-->
+                        <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black">
+                            <img src="./assets//projects/guitarstore-web.png" class="w-full h-full object-center bg-cover" />]
+                            <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
+                                <h1 class="font-bold my-6 text-2xl text-center">GuitarStore - WEB</h1>
+                                <h3 class="text-center">Aplicativo para venda de aparelhos musicais</h3>
+                                <div class="flex flex-col flex-1 items-center">
+                                    <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
+                                    <div class="flex flex-row gap-2 mt-4">
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                        <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-full h-full object-center bg-cover" /></div>
                                     </div>
                                 </div>
+                                <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
+                                    <a href="https://github.com/Josue-Santos-Pinto/GuitarStore-WEB" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                    <a href="https://guitar-store-web.vercel.app/" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                </div>
                             </div>
+                        </div>
                 </div>
 
                 <!--Projetos - MOBILE -->
-                <div id="project3" class="conteudo grid grid-cols-1 grid-rows-6 gap-2 w-2/3 hidden lg:grid-cols-2 lg:grid-rows-3">
+                <div id="project3" class="conteudo grid grid-cols-1 gap-2 w-2/3 hidden lg:grid-cols-2 ">
                     
                         <!--MovieMatch-->
-                        <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative ">
+                        <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black ">
                             <img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" />
                                 
                                     <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
@@ -263,95 +263,57 @@
                                             </div>
                                         </div>
                                         <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                            <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></div>
-                                            <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></div>
+                                            <a href="https://github.com/Josue-Santos-Pinto/MovieMatch" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                            <a href="https://play.google.com/store/apps/details?id=com.moviematch" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
                                         </div>
                                     </div>  
-                        </div>
-                
-                        <!--GuitarStore-->
-                                <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative ">
-                                    <img src="./assets//projects/guitarstore.png" class="w-full h-full object-center bg-cover" />]
-                                    <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
-                                        <h1 class="font-bold my-6 text-2xl text-center">GuitarStore</h1>
-                                        <h3 class="text-center">Aplicativo para venda de guitarras e aparelhos musicais</h3>
-                                        <div class="flex flex-col flex-1 items-center">
-                                            <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
-                                            <div class="flex flex-row gap-2 mt-4">
-                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                                <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            </div>
-                                        </div>
-                                        <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                            <a href="https://github.com/Josue-Santos-Pinto/GuitarStore" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                    <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer"></i></div>
-                                    <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer"></i></div>
-                                </div>
                             </div>
-                        </div>
-            </div>
-
-
-            <!--Projetos - BACKEND -->
-            <div id="project4" class="conteudo grid grid-cols-1 grid-rows-6 gap-2 w-2/3 lg:grid-cols-2 lg:grid-rows-3 hidden">
-                    <!--MovieMatch-->
-                    <div class="group w-full h-80 bg-black rounded-2xl overflow-hidden relative xl:h-96">
-                        <img src="./assets//projects/moviematch.png" class="w-full h-full object-center bg-cover" />
-                            
+                
+                            <!--GuitarStore-->
+                            <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black ">
+                                <img src="./assets//projects/guitarstore.png" class="w-full h-full object-center bg-cover" />]
                                 <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
-                                    <h1 class="font-bold my-6 text-2xl text-center">MovieMatch BACKEND</h1>
-                                    <h3 class="text-center">Aplicativo para pesquisa de filmes</h3>
+                                    <h1 class="font-bold my-6 text-2xl text-center">GuitarStore</h1>
+                                    <h3 class="text-center">Aplicativo para venda de guitarras e aparelhos musicais</h3>
                                     <div class="flex flex-col flex-1 items-center">
                                         <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
                                         <div class="flex flex-row gap-2 mt-4">
-                                            <div class="size-11 xl:size-3/6"><img alt="html5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                            <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                            <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                            <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                            <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                            <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-full h-full object-center bg-cover" /></div>
                                         </div>
                                     </div>
                                     <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                        <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer"></i></div>
-                                        <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer"></i></div>
+                                        <a href="https://github.com/Josue-Santos-Pinto/GuitarStore" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
                                     </div>
-                                </div>  
-                    </div>
-            
-                    <!--GuitarStore-->
-                    <div class="group w-full h-80 bg-black rounded-2xl overflow-hidden relative xl:h-96">
-                        <img src="./assets//projects/guitarstore.png" class="w-full h-full object-center bg-cover" />]
+                                </div>
+                            </div> 
+                                                 
+                        
+                </div>
+
+
+            <!--Projetos - BACKEND -->
+            <div id="project4" class="conteudo grid grid-cols-1 gap-2 w-2/3 lg:grid-cols-2 hidden">
+                     <!--MovieMatch-BACKEND-->
+                     <div class="group w-full h-96 bg-black rounded-2xl overflow-hidden relative border-2 border-black">
+                        <img src="./assets//projects/moviematch-backend.png" class="w-full h-full object-center bg-cover" />]
                         <div class="group-hover:flex w-3/4 h-3/4 border-2 rounded-3xl m-auto absolute inset-0 bg-neutral-900/50 text-white xl:hidden flex-col items-center ease-in-out">
-                            <h1 class="font-bold my-6 text-2xl text-center">GuitarStore</h1>
-                            <h3 class="text-center">Aplicativo para venda de guitarras e aparelhos musicais</h3>
+                            <h1 class="font-bold my-6 text-2xl text-center">MovieMatch - Backend</h1>
+                            <h3 class="text-center">API do aplicativo MovieMatch</h3>
                             <div class="flex flex-col flex-1 items-center">
                                 <h4 class="font-bold text-lg mt-2">Tecnologias:</h4>
                                 <div class="flex flex-row gap-2 mt-4">
-                                    <div class="size-11 xl:size-3/6"><img alt="html5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
-
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
-                                    <div class="size-11 xl:size-3/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                    <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                    <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                    <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" class="w-full h-full object-center bg-cover" /></div>
+                                    <div class="size-11 xl:size-2/6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-full h-full object-center bg-cover" /></div>
                                 </div>
                             </div>
                             <div class="w-full h-1/4 flex flex-row items-center absolute bottom-0 left-0 right-0">
-                                <div class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer"></i></div>
-                                <div class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer"></i></div>
+                                <a href="https://github.com/Josue-Santos-Pinto/GuitarStore-BACKEND" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-brands fa-github text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
+                                <a href="https://moviematch-backend.vercel.app/" target="_blank" class="flex flex-1 justify-center items-center"><i class="fa-solid fa-eye text-4xl text-white cursor-pointer hover:text-yellow-500"></i></a>
                             </div>
                         </div>
                     </div>
@@ -427,7 +389,12 @@
                 </form>
             </div>
         </div>
+        <a href="https://play.google.com/store/apps/details?id=com.josue_portfolio" target="_blank" class="m-auto w-48 h-16 cursor-pointer overflow-hidden">
+            <img src="./assets/playstorebtn.png" alt="baixar portfolio na playstore" class="w-full h-auto object-center">
+        </a>
     </section>
+
+    
     <script src="./script.js"></script>
 </body>
 </html>
